@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Oluwafunmibi Seun Idowu | Academic Portfolio</title>
+    <meta name="description" content="Academic portfolio of Dr. Oluwafunmibi Seun Idowu - Researcher in Construction Cost Estimation, Machine Learning, and BIM">
+    <style>
+        :root { --primary: #1a365d; --accent: #2b6cb0; --light: #f7fafc; --text: #2d3748; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.7; color: var(--text); background: var(--light); }
+        
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        
+        header { background: var(--primary); color: white; padding: 60px 0; text-align: center; }
+        header h1 { font-size: 2.4em; margin-bottom: 10px; }
+        header p { font-size: 1.2em; opacity: 0.95; }
+        .orcid { display: inline-block; margin-top: 15px; padding: 6px 16px; background: rgba(255,255,255,0.15); border-radius: 20px; font-size: 0.9em; }
+        
+        nav { background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
+        nav ul { list-style: none; display: flex; justify-content: center; gap: 30px; padding: 15px 0; }
+        nav a { text-decoration: none; color: var(--primary); font-weight: 600; transition: color 0.2s; }
+        nav a:hover { color: var(--accent); }
+        
+        section { background: white; margin: 30px 0; padding: 35px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+        h2 { color: var(--primary); font-size: 1.6em; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid var(--accent); }
+        
+        .pub-item { margin-bottom: 20px; padding-left: 20px; border-left: 3px solid var(--accent); }
+        .pub-title { font-weight: 700; color: var(--primary); }
+        .pub-meta { font-size: 0.92em; color: #555; margin-top: 4px; }
+        
+        .research-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+        .tag { background: var(--accent); color: white; padding: 5px 14px; border-radius: 15px; font-size: 0.88em; }
+        
+        /* New Styles for Contact & CV */
+        .btn { display: inline-block; padding: 10px 20px; background: var(--accent); color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 10px; transition: background 0.3s; }
+        .btn:hover { background: var(--primary); }
+        
+        form { display: grid; gap: 15px; }
+        input, textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; }
+        button[type="submit"] { background: var(--primary); color: white; padding: 12px; border: none; border-radius: 5px; cursor: pointer; font-size: 1em; font-weight: bold; }
+        button[type="submit"]:hover { background: var(--accent); }
+        
+        footer { text-align: center; padding: 30px; color: #666; font-size: 0.9em; }
+        
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8em; }
+            nav ul { gap: 15px; font-size: 0.9em; }
+            section { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dr. Oluwafunmibi Seun Idowu</h1>
+            <p>Construction Economics | Machine Learning | Digital Built Environment</p>
+            <span class="orcid">ORCID: 0000-0002-5264-513X</span>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About</h2>
+            <p>I am a researcher specializing in construction cost engineering, machine learning applications in the built environment, and digital construction technologies. My work focuses on developing intelligent models for early-stage cost estimation, conceptual quantity prediction, and web-based decision support tools for construction professionals.</p>
+            <p style="margin-top:15px;">I completed my doctoral research at City University of Hong Kong, where I developed novel frameworks for predicting building envelope quantities and costs using advanced computational methods without reliance on preliminary sketch designs [[1]].</p>
+            
+            <!-- CV Download Button -->
+            <a href="#" class="btn" onclick="alert('Please upload your PDF as cv.pdf in your GitHub repository to enable this link.'); return false;">📄 Download Full CV</a>
+        </section>
+        
+        <section id="research">
+            <h2>Research Interests</h2>
+            <div class="research-tags">
+                <span class="tag">Construction Cost Estimation</span>
+                <span class="tag">Support Vector Machines</span>
+                <span class="tag">Building Envelope Modelling</span>
+                <span class="tag">Conceptual Quantity Estimation</span>
+                <span class="tag">Web-Based Decision Tools</span>
+                <span class="tag">Building Information Modelling (BIM)</span>
+                <span class="tag">Machine Learning in Construction</span>
+            </div>
+        </section>
+        
+        <section id="publications">
+            <h2>Selected Publications</h2>
+            
+            <div class="pub-item">
+                <div class="pub-title">Conceptual Quantities Estimation Using Bootstrapped Support Vector Regression Models</div>
+                <div class="pub-meta">Idowu, O.S. & Lam, K.C. | Journal of Construction Engineering and Management, 146(4) | Apr 2020 | 10 Scopus Citations</div>
+            </div>
+            
+            <div class="pub-item">
+                <div class="pub-title">Web-based Application for Predesign Cost Planning of Vertical Building Envelopes</div>
+                <div class="pub-meta">Idowu, O.S. & Lam, K.C. | Automation in Construction, 106 | Oct 2019 | 5 Scopus Citations</div>
+            </div>
+            
+            <div class="pub-item">
+                <div class="pub-title">Conceptual Perimeter Model for Estimating Building Envelope Quantities</div>
+                <div class="pub-meta">Lam, K.C. & Idowu, O.S. | Int. Journal of Civil and Environmental Engineering | 2017</div>
+            </div>
+            
+            <!-- Google Scholar Link -->
+            <div style="margin-top: 30px; text-align: center;">
+                <p>For a complete list of publications and citation metrics:</p>
+                <a href="https://scholar.google.com/citations?user=osidowu2&hl=en" target="_blank" class="btn">🎓 View Google Scholar Profile</a>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>I am open to academic collaborations and research inquiries. Please use the form below or reach out via email.</p>
+            
+            <!-- Working Contact Form using Formspree -->
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            
+            <p style="margin-top: 20px;"><strong>Email:</strong> [Insert your professional email here]</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Dr. Oluwafunmibi Seun Idowu. All rights reserved.</p>
+    </footer>
+</body>
+</html>
