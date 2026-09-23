@@ -3,215 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Oluwafunmibi Seun Idowu | Academic Portfolio</title>
-    <meta name="description" content="Academic portfolio of Dr. Oluwafunmibi Seun Idowu - Researcher in Construction Cost Estimation, Machine Learning, and BIM">
-    <!-- Google Fonts for a premium look -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Dr. Oluwafunmibi Seun Idowu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #0f172a;       /* Deep Slate */
-            --secondary: #3b82f6;     /* Bright Blue */
-            --accent: #0ea5e9;        /* Sky Blue */
-            --bg-light: #f8fafc;      /* Very Light Gray */
-            --card-bg: #ffffff;
-            --text-main: #334155;
-            --text-light: #64748b;
+            --text-color: #222;
+            --accent-color: #8b0000; /* Deep Academic Red */
+            --bg-color: #fff;
+            --border-color: #ddd;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body { 
-            font-family: 'Inter', sans-serif; 
-            line-height: 1.8; 
-            color: var(--text-main); 
-            background: var(--bg-light); 
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--text-color);
+            background: var(--bg-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
 
-        /* Hero Section with Gradient */
-        header { 
-            background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%); 
-            color: white; 
-            padding: 80px 0; 
-            text-align: center; 
-            position: relative;
-            overflow: hidden;
-        }
-        
-        header h1 { font-size: 2.8em; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 15px; }
-        header p { font-size: 1.3em; opacity: 0.9; font-weight: 300; max-width: 700px; margin: 0 auto; }
-        
-        .orcid-badge { 
-            display: inline-flex; align-items: center; gap: 8px;
-            margin-top: 25px; padding: 8px 20px; 
-            background: rgba(255,255,255,0.1); 
-            border: 1px solid rgba(255,255,255,0.2);
-            border-radius: 50px; font-size: 0.9em; backdrop-filter: blur(5px);
+        h1, h2, h3 {
+            font-family: 'Merriweather', serif;
+            color: #111;
         }
 
-        /* Sticky Navigation */
-        nav { 
-            background: rgba(255, 255, 255, 0.95); 
-            backdrop-filter: blur(10px);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05); 
-            position: sticky; top: 0; z-index: 1000; 
+        /* Simple Top Bar */
+        .top-bar {
+            background: #f4f4f4;
+            border-bottom: 1px solid var(--border-color);
+            padding: 10px 0;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
         }
-        nav ul { list-style: none; display: flex; justify-content: center; gap: 40px; padding: 20px 0; }
-        nav a { text-decoration: none; color: var(--primary); font-weight: 600; font-size: 0.95em; transition: all 0.3s ease; position: relative; }
-        nav a::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -5px; left: 0; background: var(--secondary); transition: width 0.3s; }
-        nav a:hover { color: var(--secondary); }
-        nav a:hover::after { width: 100%; }
 
-        .container { max-width: 1000px; margin: 0 auto; padding: 0 25px; }
-
-        /* Card-Based Sections */
-        section { 
-            background: var(--card-bg); 
-            margin: 40px 0; 
-            padding: 45px; 
-            border-radius: 16px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.04); 
-            transition: transform 0.3s ease;
+        .container {
+            max-width: 800px; /* Narrower for better reading */
+            margin: 0 auto;
+            padding: 40px 20px;
         }
-        section:hover { transform: translateY(-3px); }
 
-        h2 { 
-            color: var(--primary); 
-            font-size: 1.8em; 
-            margin-bottom: 25px; 
-            display: flex; align-items: center; gap: 10px;
+        header {
+            text-align: left;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
         }
-        h2::before { content: ''; width: 6px; height: 28px; background: var(--secondary); border-radius: 4px; display: block; }
 
-        /* Publication Cards */
-        .pub-grid { display: grid; gap: 20px; }
-        .pub-item { 
-            padding: 20px; 
-            background: var(--bg-light); 
-            border-radius: 10px; 
-            border-left: 4px solid var(--secondary);
+        header h1 {
+            font-size: 2.2em;
+            margin-bottom: 5px;
         }
-        .pub-title { font-weight: 700; color: var(--primary); font-size: 1.1em; margin-bottom: 5px; }
-        .pub-meta { font-size: 0.9em; color: var(--text-light); }
 
-        /* Research Tags */
-        .research-tags { display: flex; flex-wrap: wrap; gap: 12px; }
-        .tag { 
-            background: #e0f2fe; color: #0369a1; 
-            padding: 8px 16px; border-radius: 8px; 
-            font-size: 0.9em; font-weight: 600; 
-            transition: background 0.3s;
+        header .subtitle {
+            font-size: 1.1em;
+            color: #555;
+            font-style: italic;
         }
-        .tag:hover { background: #bae6fd; cursor: default; }
 
-        /* Buttons */
-        .btn { 
-            display: inline-block; padding: 12px 28px; 
-            background: var(--secondary); color: white; 
-            text-decoration: none; border-radius: 8px; 
-            font-weight: 600; margin-top: 20px; 
-            transition: all 0.3s; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        nav {
+            margin-bottom: 40px;
         }
-        .btn:hover { background: var(--primary); transform: translateY(-2px); }
 
-        /* Contact Form */
-        form { display: grid; gap: 20px; }
-        input, textarea { 
-            width: 100%; padding: 15px; 
-            border: 1px solid #e2e8f0; border-radius: 8px; 
-            font-family: inherit; background: var(--bg-light);
-            transition: border 0.3s;
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 25px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
         }
-        input:focus, textarea:focus { outline: none; border-color: var(--secondary); background: white; }
-        button[type="submit"] { 
-            background: var(--primary); color: white; padding: 15px; 
-            border: none; border-radius: 8px; cursor: pointer; 
-            font-size: 1em; font-weight: bold; transition: background 0.3s;
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 1px;
         }
-        button[type="submit"]:hover { background: var(--secondary); }
 
-        footer { text-align: center; padding: 40px; color: var(--text-light); font-size: 0.9em; border-top: 1px solid #e2e8f0; margin-top: 60px; }
+        nav a:hover {
+            color: var(--accent-color);
+        }
 
-        @media (max-width: 768px) {
-            header h1 { font-size: 2em; }
-            nav ul { gap: 20px; font-size: 0.9em; }
-            section { padding: 30px; margin: 20px 0; }
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        .pub-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .pub-list li {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #eee;
+        }
+
+        .pub-title {
+            font-weight: bold;
+            display: block;
+        }
+
+        .pub-journal {
+            font-style: italic;
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .btn-classic {
+            display: inline-block;
+            border: 1px solid #333;
+            padding: 8px 16px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9em;
+            transition: all 0.2s;
+        }
+
+        .btn-classic:hover {
+            background: #333;
+            color: white;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            font-family: 'Lato', sans-serif;
+        }
+
+        form button {
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-family: 'Lato', sans-serif;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            letter-spacing: 1px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.8em;
+            color: #777;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Dr. Oluwafunmibi Seun Idowu</h1>
-            <p>Construction Economics | Machine Learning | Digital Built Environment</p>
-            <div class="orcid-badge">
-                <span>🆔</span> ORCID: 0000-0002-5264-513X
-            </div>
-        </div>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
+
+    <div class="top-bar">
+        Department of Construction & Real Estate | City University of Hong Kong (Former)
+    </div>
+
     <div class="container">
+        <header>
+            <h1>Dr. Oluwafunmibi Seun Idowu</h1>
+            <div class="subtitle">Ph.D. | Researcher in Construction Economics & Digital Engineering</div>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#about">Biography</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
         <section id="about">
-            <h2>About Me</h2>
-            <p>I am a researcher specializing in construction cost engineering and digital technologies. My work bridges the gap between traditional construction management and advanced computational methods like Machine Learning and Support Vector Machines.</p>
-            <p style="margin-top:15px;">I completed my doctoral research at <strong>City University of Hong Kong</strong>, developing novel frameworks for predicting building envelope quantities without reliance on preliminary sketch designs.</p>
-            <a href="#" class="btn" onclick="alert('Upload cv.pdf to your GitHub repo to enable this.'); return false;">📄 Download CV</a>
+            <h2>Biography</h2>
+            <p>Dr. Idowu is a researcher focused on the application of machine learning and web-based tools in construction cost engineering. His work aims to improve the accuracy of early-stage cost planning through empirical modeling and support vector regression.</p>
+            <p>He holds a Ph.D. from City University of Hong Kong, where his thesis explored conceptual quantity models for building envelopes.</p>
+            <br>
+            <a href="#" class="btn-classic">Download Curriculum Vitae</a>
         </section>
         
         <section id="research">
-            <h2>Research Focus</h2>
-            <div class="research-tags">
-                <span class="tag">Cost Estimation</span>
-                <span class="tag">Support Vector Machines</span>
-                <span class="tag">Building Envelopes</span>
-                <span class="tag">Web-Based Tools</span>
-                <span class="tag">BIM & Digital Twins</span>
-                <span class="tag">Reinforced Concrete</span>
-            </div>
+            <h2>Research Interests</h2>
+            <ul>
+                <li>Conceptual Cost Estimation</li>
+                <li>Machine Learning in Construction (SVR, Bootstrap)</li>
+                <li>Building Envelope Performance</li>
+                <li>Web-based Decision Support Systems</li>
+            </ul>
         </section>
-        
+
         <section id="publications">
             <h2>Selected Publications</h2>
-            <div class="pub-grid">
-                <div class="pub-item">
-                    <div class="pub-title">Conceptual Quantities Estimation Using Bootstrapped SVR Models</div>
-                    <div class="pub-meta">Journal of Construction Engineering and Management (2020) | 10 Citations</div>
-                </div>
-                <div class="pub-item">
-                    <div class="pub-title">Web-based Application for Predesign Cost Planning</div>
-                    <div class="pub-meta">Automation in Construction (2019) | 5 Citations</div>
-                </div>
-                <div class="pub-item">
-                    <div class="pub-title">Conceptual Perimeter Model for Building Envelope Quantities</div>
-                    <div class="pub-meta">Int. Journal of Civil and Environmental Engineering (2017)</div>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 30px;">
-                <a href="https://scholar.google.com/citations?user=osidowu2&hl=en" target="_blank" class="btn">🎓 View Google Scholar</a>
-            </div>
+            <ul class="pub-list">
+                <li>
+                    <span class="pub-title">Conceptual Quantities Estimation Using Bootstrapped Support Vector Regression Models</span>
+                    <span class="pub-journal">Journal of Construction Engineering and Management, 2020</span>
+                </li>
+                <li>
+                    <span class="pub-title">Web-based Application for Predesign Cost Planning of Vertical Building Envelopes</span>
+                    <span class="pub-journal">Automation in Construction, 2019</span>
+                </li>
+                <li>
+                    <span class="pub-title">Conceptual Perimeter Model for Estimating Building Envelope Quantities</span>
+                    <span class="pub-journal">International Journal of Civil and Environmental Engineering, 2017</span>
+                </li>
+            </ul>
         </section>
         
         <section id="contact">
-            <h2>Get in Touch</h2>
+            <h2>Contact</h2>
+            <p>For research collaborations or inquiries:</p>
             <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="How can I help you?" required></textarea>
-                <button type="submit">Send Message</button>
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" rows="4" placeholder="Message"></textarea>
+                <button type="submit">Send Inquiry</button>
             </form>
         </section>
+
+        <footer>
+            &copy; 2026 Dr. Oluwafunmibi Seun Idowu. 
+            <br>ORCID: 0000-0002-5264-513X
+        </footer>
     </div>
-    
-    <footer>
-        <p>&copy; 2026 Dr. Oluwafunmibi Seun Idowu. All rights reserved.</p>
-    </footer>
+
 </body>
 </html>
