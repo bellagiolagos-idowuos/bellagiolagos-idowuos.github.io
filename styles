@@ -1,0 +1,1145 @@
+/* =========================================================
+   DR. IDOWU ACADEMIC WEBSITE
+   Modern Academic / Typewriter Aesthetic
+========================================================= */
+
+:root {
+
+    --navy: #081525;
+    --navy-light: #102b46;
+    --blue: #174f7c;
+
+    --gold: #d3a74d;
+    --gold-light: #e5c77d;
+
+    --paper: #fbfaf7;
+    --cream: #f2eee4;
+    --white: #ffffff;
+
+    --ink: #172536;
+    --muted: #697889;
+
+    --line: #d9e0e6;
+
+    --mono: "IBM Plex Mono", monospace;
+    --serif: "Playfair Display", Georgia, serif;
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+
+    font-family: var(--mono);
+    line-height: 1.75;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    width: min(1160px, 92%);
+    margin: auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 100;
+
+    color: white;
+
+}
+
+
+.nav {
+
+    height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.16);
+
+}
+
+
+.logo {
+
+    font-family: var(--serif);
+
+    font-size: 27px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    letter-spacing: -.04em;
+
+}
+
+
+.logo span {
+    color: var(--gold);
+}
+
+
+.navigation {
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+.navigation a {
+
+    font-family: var(--mono);
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .07em;
+
+    text-decoration: none;
+
+    color: white;
+
+    opacity: .82;
+
+    transition: .2s;
+
+}
+
+
+.navigation a:hover {
+
+    color: var(--gold-light);
+
+    opacity: 1;
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+    min-height: 790px;
+
+    padding:
+        120px 0
+        70px;
+
+    display: flex;
+
+    align-items: center;
+
+    color: white;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(211,167,77,.16),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #081525,
+            #123e63
+        );
+
+}
+
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.25fr
+        .75fr;
+
+    gap: 90px;
+
+    align-items: center;
+
+}
+
+
+.terminal {
+
+    color: var(--gold);
+
+    font-family: var(--mono);
+
+    font-size: 12px;
+
+    letter-spacing: .04em;
+
+    margin-bottom: 25px;
+
+}
+
+
+.terminal-symbol {
+
+    color: white;
+
+}
+
+
+.cursor {
+
+    display: inline-block;
+
+    width: 7px;
+
+    height: 13px;
+
+    margin-left: 5px;
+
+    background: var(--gold);
+
+    animation: blink 1s infinite;
+
+}
+
+
+@keyframes blink {
+
+    0%,
+    45% {
+        opacity: 1;
+    }
+
+    46%,
+    100% {
+        opacity: 0;
+    }
+
+}
+
+
+.eyebrow {
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: .2em;
+
+    color: #aebfce;
+
+    margin-bottom: 18px;
+
+}
+
+
+.hero h1 {
+
+    font-family: var(--serif);
+
+    font-size:
+        clamp(
+            52px,
+            7vw,
+            90px
+        );
+
+    line-height: 1.02;
+
+    letter-spacing: -.05em;
+
+    margin: 0 0 28px;
+
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: var(--gold-light);
+
+}
+
+
+.hero-description {
+
+    max-width: 720px;
+
+    font-size: 15px;
+
+    color: #d5e0ea;
+
+    line-height: 1.95;
+
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 13px;
+
+    margin-top: 35px;
+
+}
+
+
+.button {
+
+    padding:
+        13px
+        21px;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: .06em;
+
+    transition: .2s;
+
+}
+
+
+.button-primary {
+
+    background: var(--gold);
+
+    color: var(--navy);
+
+}
+
+
+.button-primary:hover {
+
+    background: var(--gold-light);
+
+}
+
+
+.button-secondary {
+
+    border:
+        1px solid
+        rgba(255,255,255,.4);
+
+    color: white;
+
+}
+
+
+.button-secondary:hover {
+
+    border-color: var(--gold);
+
+    color: var(--gold-light);
+
+}
+
+
+/* =========================================================
+   PROFILE PHOTO
+========================================================= */
+
+.profile-card {
+
+    padding: 12px;
+
+    background:
+        rgba(255,255,255,.04);
+
+    border:
+        1px solid
+        rgba(255,255,255,.25);
+
+    box-shadow:
+        20px 20px 0
+        rgba(0,0,0,.13);
+
+}
+
+
+.photo-placeholder {
+
+    aspect-ratio: 4 / 5;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    border:
+        1px dashed
+        rgba(255,255,255,.3);
+
+    background:
+
+        repeating-linear-gradient(
+            45deg,
+            transparent 0,
+            transparent 10px,
+            rgba(255,255,255,.025) 10px,
+            rgba(255,255,255,.025) 11px
+        );
+
+}
+
+
+.photo-plus {
+
+    width: 60px;
+
+    height: 60px;
+
+    border:
+        1px solid
+        var(--gold);
+
+    color: var(--gold);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 34px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.photo-title {
+
+    font-size: 12px;
+
+    letter-spacing: .16em;
+
+    font-weight: 600;
+
+}
+
+
+.photo-subtitle {
+
+    color: #8fa2b4;
+
+    font-size: 10px;
+
+    margin-top: 7px;
+
+}
+
+
+.profile-caption {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding:
+        15px
+        4px
+        2px;
+
+    font-size: 11px;
+
+}
+
+
+.profile-caption small {
+
+    color: #93a5b6;
+
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+.section {
+
+    padding: 115px 0;
+
+}
+
+
+.section-number {
+
+    margin: 0 0 18px;
+
+    color: var(--gold);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: .2em;
+
+}
+
+
+.section h2 {
+
+    font-family: var(--serif);
+
+    font-size:
+        clamp(
+            35px,
+            4.5vw,
+            58px
+        );
+
+    line-height: 1.12;
+
+    letter-spacing: -.04em;
+
+    margin:
+        0
+        0
+        35px;
+
+}
+
+
+.section-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        .9fr
+        1.1fr;
+
+    gap: 100px;
+
+}
+
+
+.section-text {
+
+    max-width: 720px;
+
+}
+
+
+.section-text p {
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    margin-top: 0;
+
+    margin-bottom: 22px;
+
+}
+
+
+/* =========================================================
+   RESEARCH
+========================================================= */
+
+.research-section {
+
+    background: var(--navy);
+
+    color: white;
+
+}
+
+
+.research-section h2 {
+
+    margin-bottom: 45px;
+
+}
+
+
+.research-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 1px;
+
+    background: #314254;
+
+}
+
+
+.research-card {
+
+    min-height: 285px;
+
+    padding: 30px 25px;
+
+    background: var(--navy);
+
+    transition: .25s ease;
+
+}
+
+
+.research-card:hover {
+
+    background: #122d48;
+
+    transform: translateY(-5px);
+
+}
+
+
+.research-number {
+
+    color: var(--gold);
+
+    font-size: 10px;
+
+    margin-bottom: 55px;
+
+}
+
+
+.research-card h3 {
+
+    font-family: var(--serif);
+
+    font-size: 21px;
+
+    line-height: 1.3;
+
+    margin: 0 0 15px;
+
+}
+
+
+.research-card p {
+
+    color: #9cafc0;
+
+    font-size: 12px;
+
+    line-height: 1.85;
+
+}
+
+
+/* =========================================================
+   PUBLICATIONS
+========================================================= */
+
+.publication-list {
+
+    border-top:
+        1px solid
+        var(--line);
+
+}
+
+
+.publication {
+
+    display: grid;
+
+    grid-template-columns:
+        90px
+        1fr;
+
+    gap: 35px;
+
+    padding: 35px 0;
+
+    border-bottom:
+        1px solid
+        var(--line);
+
+}
+
+
+.publication-year {
+
+    color: var(--gold);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.publication h3 {
+
+    font-family: var(--serif);
+
+    font-size: 22px;
+
+    line-height: 1.4;
+
+    margin:
+        0
+        0
+        10px;
+
+}
+
+
+.publication p {
+
+    max-width: 850px;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    margin:
+        0
+        0
+        12px;
+
+}
+
+
+.publication a {
+
+    color: var(--blue);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+}
+
+
+.publication a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
+.education-section {
+
+    background: var(--cream);
+
+}
+
+
+.timeline {
+
+    border-top:
+        1px solid
+        var(--line);
+
+}
+
+
+.timeline-item {
+
+    display: grid;
+
+    grid-template-columns:
+        80px
+        1fr;
+
+    gap: 30px;
+
+    padding:
+        28px
+        0;
+
+    border-bottom:
+        1px solid
+        var(--line);
+
+}
+
+
+.timeline-year {
+
+    color: var(--gold);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.timeline h3 {
+
+    font-family: var(--serif);
+
+    font-size: 21px;
+
+    line-height: 1.35;
+
+    margin:
+        0
+        0
+        7px;
+
+}
+
+
+.timeline p {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    margin: 4px 0;
+
+}
+
+
+.timeline .thesis {
+
+    margin-top: 13px;
+
+}
+
+
+/* =========================================================
+   PROFESSIONAL
+========================================================= */
+
+.professional-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 100px;
+
+    border-top:
+        1px solid
+        var(--line);
+
+    padding-top: 80px;
+
+}
+
+
+.professional-text p {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-section {
+
+    padding: 100px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #102b46,
+            #0a1a2c
+        );
+
+    color: white;
+
+}
+
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 100px;
+
+    align-items: end;
+
+}
+
+
+.contact-section h2 {
+
+    font-family: var(--serif);
+
+    font-size:
+        clamp(
+            38px,
+            5vw,
+            62px
+        );
+
+    line-height: 1.1;
+
+    margin:
+        0
+        0
+        20px;
+
+}
+
+
+.contact-section p:not(.section-number) {
+
+    color: #b7c6d3;
+
+    font-size: 13px;
+
+}
+
+
+.contact-links {
+
+    display: grid;
+
+    gap: 10px;
+
+}
+
+
+.contact-links a {
+
+    padding:
+        17px
+        20px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.18);
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    letter-spacing: .06em;
+
+    transition: .2s;
+
+}
+
+
+.contact-links a:hover {
+
+    border-color: var(--gold);
+
+    color: var(--gold-light);
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    background: #050e19;
+
+    color: #7f91a3;
+
+}
+
+
+.footer {
+
+    min-height: 70px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    font-size: 10px;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .navigation {
+        display: none;
+    }
+
+    .hero {
+        min-height: auto;
+
+        padding:
+            150px
+            0
+            80px;
+    }
+
+    .hero-grid,
+    .section-grid,
+    .professional-grid,
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+
+    }
+
+    .profile-card {
+
+        max-width: 430px;
+
+    }
+
+    .research-grid {
+
+        grid-template-columns:
+            1fr
+            1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .section {
+
+        padding:
+            80px
+            0;
+
+    }
+
+    .hero h1 {
+
+        font-size: 50px;
+
+    }
+
+    .research-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .research-card {
+
+        min-height: 220px;
+
+    }
+
+    .publication {
+
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+
+    }
+
+    .timeline-item {
+
+        grid-template-columns: 1fr;
+
+        gap: 4px;
+
+    }
+
+    .footer {
+
+        display: block;
+
+        padding:
+            20px
+            0;
+
+    }
+
+    .footer span {
+
+        display: block;
+
+        margin:
+            5px
+            0;
+
+    }
+
+}
